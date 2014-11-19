@@ -22,4 +22,4 @@ Finally, execute the interactive database console by typing:
 
 The console will ask you some questions about the scene you run. Please fill out everything that you can. It is helpful to know the parameters used if we want to use the scene for something else in the future.
 
-That is all! The script will update the .CSV data table and .GeoJSON map file. 
+That is all! The script will update the .CSV data table and .GeoJSON map file. The data is updating automatically, but will only appear on this repository once I push the update.  
