@@ -1,15 +1,5 @@
 ID,Project,Path Row,User,Parameter File Location
-1,CMS_Mexico,20048,bullocke,/projectnb/landsat/projects/CMS_Mexico/images/020048/images/p020r048_params.ini
-2,MODIS Near-Real Time,49023,Eric B,/projectnb/landsat/users/bullocke/BC/images/p049r023_params.ini
-3,MODIS Near-Real Time,49023,Eric B,/projectnb/landsat/users/bullocke/BC/images/p049r023_params.ini
-4,CMS_Mexico,24049,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
-5,CMS_Mexico,24049,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
-6,CMS_Mexico,18047,Eric,/projectnb/landsat/projects/CMS_Mexico/images/018047/018047params.ini
-7,CMS_Mexico,31041,Eric,/CMS_Mexico/images/031041
-8,MODIS Near-Real Time,49023,Eric B,/landsat/users/bullocke/BC/images/p049r023_params.ini
-9,CMS_Mexico,24049,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
-10,CMS_Mexico,24049,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
-11,CMS_Mexico,20048,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/020048/images/p020r048_params.ini
-12,CMS,20046,ceholden,/projectnb/landsat/projects/CMS/stacks/Mexico/p020r046/2_YATSM/p020r046.ini
-13,Colombia,7059,Paulo A,/projectnb/landsat/users/parevalo/columbia/007059/images/007059_config.ini
-14,Colombia,8059,Paulo A,/projectnb/landsat/users/parevalo/columbia/008059/images
+15,MODIS Near-Real Time,49023,Eric B,/projectnb/landsat/users/bullocke/BC/images/p049r023_params.ini
+16,CMS_Mexico,24049,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
+17,CMS,20046,ceholden,/projectnb/landsat/projects/CMS/stacks/Mexico/p020r046/2_YATSM/p020r046.ini
+18,Colombia,7059,Paulo A,/projectnb/landsat/users/parevalo/columbia/007059/images/007059_config.ini

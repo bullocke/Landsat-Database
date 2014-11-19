@@ -1,4 +1,4 @@
 ID,Project,Path Row,User,MinRMSE,Change Probability,Noise Probability,Consecutive Observations for Change,# Coefficients,Stack Location
 1,Vietnam,125053,Eric,,,,4,8,/landsat/projects/Vietnam/p125r053/images
-3,CMS_Mexico,20048,Eric B,,,,4,8,/landsat/projects/CMS_Mexico/images/020048/images
-5,CMS_Mexico,34039,Eric B,1,,800.0,5,8,/projectnb/landsat/projects/CMS_Mexico/images/034039
+6,CMS_Mexico,20048,Eric B,1,,800.0,5,8,/projectnb/landsat/projects/CMS_Mexico/images/020048/images
+7,CMS_Mexico,34039,Eric B,.5,,800.0,5,8,/projectnb/landsat/projects/CMS_Mexico/images/034039/images
