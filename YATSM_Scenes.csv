@@ -1,6 +1,6 @@
-ID,Project,Path Row,User,Parameter File Location
-15,MODIS Near-Real Time,49023,Eric B,/projectnb/landsat/users/bullocke/BC/images/p049r023_params.ini
-16,CMS_Mexico,24049,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
-17,CMS,20046,ceholden,/projectnb/landsat/projects/CMS/stacks/Mexico/p020r046/2_YATSM/p020r046.ini
-18,Colombia,7059,Paulo A,/projectnb/landsat/users/parevalo/columbia/007059/images/007059_config.ini
-19,Colombia,8059,Paulo,/projectnb/landsat/users/parevalo/columbia/008059/008059_config.ini
+,id,Project,PathRow,User,Location
+0,3,CMS,20046,ceholden,/projectnb/landsat/projects/CMS/stacks/Mexico/p020r046/2_YATSM/p020r046.ini
+1,4,Fusion,49023,bullocke,/projectnb/landsat/users/bullocke/BC/images/p049r023_params.ini
+2,7,Colombia,7059,Paulo A,/projectnb/landsat/users/parevalo/columbia/007059/images/007059_config.ini
+3,8,Colombia,8059,Paulo A,/projectnb/landsat/users/parevalo/columbia/008059/008059_config.ini
+4,10,CMS_Mexico,24049,bullocke,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
