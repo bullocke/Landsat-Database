@@ -3,3 +3,13 @@ ID,Project,Path Row,User,MinRMSE,Change Probability,Noise Probability,Consecutiv
 6,CMS_Mexico,20048,Eric B,1,,800.0,5,8,/projectnb/landsat/projects/CMS_Mexico/images/020048/images
 7,CMS_Mexico,34039,Eric B,.5,,800.0,5,8,/projectnb/landsat/projects/CMS_Mexico/images/034039/images
 8,Guangzhou,122044,Yingchun Fu,,,,6,,Projectnb/landsat/users/fuyc/p122r044[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+9,Acre,5066,Shixiong Wang,,,,,,/projectnb/landsat/proojects/ACRE/stacks/p005r066/images
+10,Acre,4066,Shixiong Wang,,,,,,/projectnb/landsat/projects/ACRE/stacks/p004r066/images
+11,Acre,3067,Shixiong Wang,,,,,,/projectnb/landsat/projects/ACRE/stacks/p003067/images
+12,Acre,2067,Shixiong Wang,,,,,,/projectnb/landsat/projects/ACRE/stacks/p002067/images
+13,LCMS,45030,Zhe Zhu,0.005,0.99,0.999999,6,8,/projectnb/landsat/projetcts/LCMS/4530/images/
+14,LCMS,27027,Zhe Zhu,0.005,0.99,0.999999,6,8,/projectnb/landsat/projects/LCMS/2727/images/
+15,LCMS,12028,Zhe Zhu,0.005,0.99,0.999999,6,8,/projectnb/landsat/projects/LCMS/1228/images
+16,LCMS,14032,Zhe Zhu,0.005,0.99,0.999999,6,8,/projectbnb/landsat/projects/LCMS/1432/images
+17,ZLCMS,16037,Zhe Zhu,0.005,0.99,0.999999,6,8,/projectnb/landsat/projects/LCMS/1637/imag4eses
+18,LCMS,35032,Zhe Zhu,0.005,0.99,0.999999,6,8,/projectnb/landsat/projects/LCMS/3532/images

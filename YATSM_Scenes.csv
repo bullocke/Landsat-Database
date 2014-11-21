@@ -3,3 +3,4 @@ ID,Project,Path Row,User,Parameter File Location
 16,CMS_Mexico,24049,Eric B,/projectnb/landsat/projects/CMS_Mexico/images/024049/images/024049_params.ini
 17,CMS,20046,ceholden,/projectnb/landsat/projects/CMS/stacks/Mexico/p020r046/2_YATSM/p020r046.ini
 18,Colombia,7059,Paulo A,/projectnb/landsat/users/parevalo/columbia/007059/images/007059_config.ini
+19,Colombia,8059,Paulo,/projectnb/landsat/users/parevalo/columbia/008059/008059_config.ini
