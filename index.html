@@ -33,7 +33,14 @@
 <p><script src="https://embed.github.com/view/geojson/bullocke/Landsat-Database/master/PRmap.geojson?height=420&width=800"></script></p>    
        <h2>
 <a id="table" class="anchor" href="#table" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scenes</h2>
-<p><p><script src="https://embed.github.com/view/geojson/bullocke/Landsat-Database/master/SceneList.csv"></script></p></p>
+
+<div id="CSVTable"></div>
+  <script>
+  $(function() {
+    $('#CSVTable').CSVToTable('https://embed.github.com/view/geojson/bullocke/Landsat-Database/master/SceneList.csv');
+  });
+  </script>
+  
         <h2>
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h2>
 
