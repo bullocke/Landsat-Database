@@ -94,7 +94,7 @@ for row in rawData:
         fillcolor = '#336600'
     elif row[2].upper() == 'VIETNAM':
         fillcolor = '#d9d9d9'
-    elif row[2].upper() == 'CAMBODIA':
+    elif row[2].upper() == 'CAMBODIA DEFORESTATION':
         fillcolor = '#bc80bd'
     elif row[2].upper() == 'FUSION':
         fillcolor = '#ccebc5'
