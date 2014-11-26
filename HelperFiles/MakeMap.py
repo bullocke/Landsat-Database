@@ -77,27 +77,27 @@ for row in rawData:
         fillop = '0.9'
     iter += 1
     if row[2].upper() == 'CMS_MEXICO' or row[2].upper() =='CMS MEXICO':
-        fillcolor = '#fb8072'
+        fillcolor = '#33a02c'
     elif row[2].upper() == 'ACRE':
-        fillcolor = '#8dd3c7'
+        fillcolor = '#1f78b4'
     elif row[2].upper() == 'AMAZON':
-        fillcolor = '#ffffb3'
+        fillcolor = '#a6cee3'
     elif row[2].upper() == 'GUANGZHOU':
-        fillcolor = '#bebada'
+        fillcolor = '#b2df8a'
     elif row[2].upper() == 'BOSTON':
         fillcolor = '#80b1d3'
     elif row[2].upper() == 'CMS':
-        fillcolor = '#fdb462'
+        fillcolor = '#fb9a99'
     elif row[2].upper() == 'IDS':
-        fillcolor = '#b3de69'
+        fillcolor = '#e31a1c'
     elif row[2].upper() == 'LCMS':
-        fillcolor = '#336600'
+        fillcolor = '#ff7f00'
     elif row[2].upper() == 'VIETNAM':
-        fillcolor = '#d9d9d9'
+        fillcolor = '#ffff99'
     elif row[2].upper() == 'CAMBODIA DEFORESTATION':
-        fillcolor = '#bc80bd'
+        fillcolor = '#6a3d9a'
     elif row[2].upper() == 'FUSION':
-        fillcolor = '#ccebc5'
+        fillcolor = '#b15928'
     else:
         fillcolor = '#737373'
     if iter >= 2 and iter != t:
