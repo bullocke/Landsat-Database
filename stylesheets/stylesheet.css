@@ -297,7 +297,10 @@ Full-Width Styles
   *******************************************************************************/
   background-image:url('https://raw.githubusercontent.com/bullocke/Landsat-Database/master/HelperFiles/Banner_small.png');
   background-repeat: no-repeat;
-  background-size:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
   
 }
 
