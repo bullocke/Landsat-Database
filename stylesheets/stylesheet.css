@@ -287,12 +287,13 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
+  <!--background: #212121;
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background: linear-gradient(top, #373737, #212121);-->
+  background-image: url("https://raw.githubusercontent.com/bullocke/Landsat-Database/master/HelperFiles/Banner_image_only.png");
 }
 
 #header_wrap .inner {
