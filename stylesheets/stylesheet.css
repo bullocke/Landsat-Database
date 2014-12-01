@@ -296,6 +296,7 @@ Full-Width Styles
   background: linear-gradient(top, #373737, #212121);
   *******************************************************************************/
   background-image:url('https://raw.githubusercontent.com/bullocke/Landsat-Database/master/HelperFiles/Banner_small.png');
+  background-repeat: no-repeat;
   background-size:100%;
   
 }
