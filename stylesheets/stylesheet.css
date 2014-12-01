@@ -295,7 +295,7 @@ Full-Width Styles
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
   *******************************************************************************/
-  background: url('https://raw.githubusercontent.com/bullocke/Landsat-Database/master/HelperFiles/Banner_small.png');
+  background-image: url('https://raw.githubusercontent.com/bullocke/Landsat-Database/master/HelperFiles/Banner_small.png');
 }
 
 #header_wrap .inner {
