@@ -318,7 +318,11 @@ Full-Width Styles
   font-size: 24px;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: 
+  -1px 1px 0 #111,
+  1px -1px 0 #111,
+  -1px 1px 0 #111,
+  1px -1px 0 #111;
 }
 
 #downloads {
