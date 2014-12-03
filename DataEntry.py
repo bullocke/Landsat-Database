@@ -21,6 +21,7 @@ pathrow1 = raw_input("Enter Path Row PPPRRR: ")
 username = raw_input("Enter the user who processed the scene: ")
 completed = raw_input("Have you finished running the model on this scene? y/n ")
 if completed == 'n':
+    ccdcversion = ''
     model = 'None'
     processing = raw_input("Have you started processing the images yet? y/n ")
     if processing == 'n':
@@ -42,6 +43,7 @@ else:
         consecChange = raw_input("Enter the number of consecutive observations for a confirmed change (If unknown just press [ENTER]: ")
         coefs = raw_input("Enter the number of coefficients used (If unknown just press [ENTER]): ")
         locationname = raw_input("Enter the location of the image stack on the server: ")            
+        ccdcversion = raw_input("Enter the version of CCDC used (If unknown just press [ENTER]): ")
     else:
         print "Please try the script again"
         exit()
@@ -50,7 +52,7 @@ if model == "YATSM":
     print '\n\nYour scene characteristics are:\nModel Run: %s\nPathRow: %s\nParameter Location: %s\nProcesing User: %s' % (modeltype, pathrow1, locationname, username)
     answer = raw_input("Is this correct? y/n ")
 elif model == "CCDC":
-    print '\n\nYour scene characteristics are:\nModel Run: %s\nPathRow: %s\nMinimum RMSE: %s\nChange Probability: %s\nNoise Probability: %s\nConsecutive Observations: %s\nCoefficients: %s\nStack Location: %s\nUsername: %s\n' %(modeltype, pathrow1, minRMSE, changeprob, noiseprob, consecChange, coefs, locationname, username)
+    print '\n\nYour scene characteristics are:\nModel Run: %s\nPathRow: %s\nMinimum RMSE: %s\nChange Probability: %s\nNoise Probability: %s\nConsecutive Observations: %s\nCoefficients: %s\nStack Location: %s\nUsername: %s\nVersion: %s\n' %(modeltype, pathrow1, minRMSE, changeprob, noiseprob, consecChange, coefs, locationname, username, ccdcversion)
     answer = raw_input("Is this correct? y/n ")
 else:
     print '\n\nYour scene characteristics are:\nProcessing: %s\nPathRow: %s\nUsername: %s\n' %(status, pathrow1, username)
@@ -117,7 +119,7 @@ table3.to_csv('CCDC_Scenes.csv')
 
 #Make the template for all but the last input of GeoJSON
 template =     ''' { "type" : "Feature",
-        "properties" : { "fill" : "%s", "stroke" : "%s", "fill-opacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s},
+        "properties" : { "fillColor" : "%s", "strokeColor" : "%s", "fillOpacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s},
     '''
 
 
@@ -125,7 +127,7 @@ template =     ''' { "type" : "Feature",
 
 #Make the template for the last input of GeoJSON
 template2 =     ''' { "type" : "Feature",
-        "properties" : { "fill" : "%s", "stroke" : "%s", "fill-opacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s}
+        "properties" : { "fillColor" : "%s", "strokeColor" : "%s", "fillOpacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s}
     '''
 
 

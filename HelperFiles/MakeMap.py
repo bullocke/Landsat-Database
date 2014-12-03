@@ -28,12 +28,11 @@ table2.to_csv('/usr3/graduate/bullocke/bin/Database/YATSM_Scenes.csv')
 table3 = panda.read_sql('select * from ccdc', con)
 table3.to_csv('/usr3/graduate/bullocke/bin/Database/CCDC_Scenes.csv')
 
-
 # In[7]:
 
 #Make the template for all but the last input of GeoJSON
 template =     ''' { "type" : "Feature",
-        "properties" : { "fill" : "%s", "stroke" : "%s", "fill-opacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s},
+        "properties" : { "fillColor" : "%s", "strokeColor" : "%s", "fillOpacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s},
     '''
 
 
@@ -41,7 +40,7 @@ template =     ''' { "type" : "Feature",
 
 #Make the template for the last input of GeoJSON
 template2 =     ''' { "type" : "Feature",
-        "properties" : { "fill" : "%s", "stroke" : "%s", "fill-opacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s}
+        "properties" : { "fillColor" : "%s", "strokeColor" : "%s", "fillOpacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s}
     '''
 
 
@@ -79,7 +78,7 @@ for row in rawData:
     if row[2].upper() == 'CMS_MEXICO' or row[2].upper() =='CMS MEXICO':
         fillcolor = '#33a02c'
     elif row[2].upper() == 'ACRE':
-        fillcolor = '#1f78b4'
+	fillcolor = '#1f78b4'
     elif row[2].upper() == 'AMAZON':
         fillcolor = '#a6cee3'
     elif row[2].upper() == 'GUANGZHOU':
@@ -107,32 +106,19 @@ for row in rawData:
                 break
         PR = rec['geometry']
         PR2 = str(PR).replace('(','[').replace(')',']').replace('\'','\"')
-        WRS2 = row[2]
-        Project = row[3]
-        Author = row[4]
-        Location = row[5]
         output += template % (fillcolor, fillcolor, fillop, row[3], row[2], row[4], row[5], PR2)
     if iter == t:
-        source = fiona.open('/usr3/graduate/bullocke/bin/testing/database2/Database/HelperFiles/wrs2_descending.shp')
+        source = fiona.open('/usr3/graduate/bullocke/bin/Database/HelperFiles/wrs2_descending.shp')
         for rec in source:
             if rec['properties']['WRSPR'] == int(row[3]):
                 break
         PR = rec['geometry']
         PR2 = str(PR).replace('(','[').replace(')',']').replace('\'','\"')
-        WRS2 = row[2]
-        Project = row[3]
-        Author = row[4]
-        Location = row[5]
         output += template2 % (fillcolor, fillcolor, fillop, row[3], row[2], row[4], row[5], PR2)
 
-
-# In[13]:
-
-#Add the tail to the output file
 output +=     '''     ]
 }
     '''
-
 
 # In[147]:
 
@@ -144,12 +130,3 @@ outFileHandle.close()
 
 
 print "Done! Thank you!"
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
