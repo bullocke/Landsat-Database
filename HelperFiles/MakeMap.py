@@ -32,15 +32,15 @@ table3.to_csv('/usr3/graduate/bullocke/bin/Database/CCDC_Scenes.csv')
 
 #Make the template for all but the last input of GeoJSON
 template =     ''' { "type" : "Feature",
-        "properties" : { "fillColor" : "%s", "strokeColor" : "%s", "fillOpacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s},
+        "properties" : { "fill" : "%s", "stroke" : "%s", "fill-opacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s},
     '''
 
 
 # In[8]:
 
-#Make the template for the last input of GeoJSON
+#Make the template for the last input of GeoJSON put %s in for fill,stroke, and fill-op
 template2 =     ''' { "type" : "Feature",
-        "properties" : { "fillColor" : "%s", "strokeColor" : "%s", "fillOpacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s}
+        "properties" : { "fill" : "%s", "stroke" : "%s", "fill-opacity" : "%s", "WRS2" : "%s", "Project" : "%s", "Author" : "%s", "Location" : "%s"}, "geometry" : %s}
     '''
 
 
@@ -99,6 +99,9 @@ for row in rawData:
         fillcolor = '#b15928'
     else:
         fillcolor = '#737373'
+
+#    fillcolor='#33a02c'
+#    fillop='0.9'
     if iter >= 2 and iter != t:
         source = fiona.open('/usr3/graduate/bullocke/bin/Database/HelperFiles/wrs2_descending.shp')
         for rec in source:
