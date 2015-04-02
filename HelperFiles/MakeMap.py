@@ -101,7 +101,7 @@ for row in rawData:
         fillcolor = '#737373'
 
 #    fillcolor='#33a02c'
-#    fillop='0.9'
+    fillop='0.9'
     if iter >= 2 and iter != t:
         source = fiona.open('/usr3/graduate/bullocke/bin/Database/HelperFiles/wrs2_descending.shp')
         for rec in source:
