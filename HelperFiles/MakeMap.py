@@ -87,6 +87,8 @@ for row in rawData:
         fillcolor = '#80b1d3'
     elif row[2].upper() == 'CMS':
         fillcolor = '#fb9a99'
+    elif row[2].upper() == 'LCMAP':
+        fillcolor = '#ffff00'
     elif row[2].upper() == 'IDS':
         fillcolor = '#e31a1c'
     elif row[2].upper() == 'LCMS':
