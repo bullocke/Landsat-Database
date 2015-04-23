@@ -69,9 +69,9 @@ t = len(open('/usr3/graduate/bullocke/bin/Database/SceneList.csv').readlines())
 #print t
 for row in rawData:
     if row[6] == 'In Processing':
-        fillop = '0.3'
+        fillop = '0.9'
     elif row[6] == 'Not Yet Started':
-        fillop = '0.0'
+        fillop = '0.9'
     else:
         fillop = '0.9'
     iter += 1
@@ -104,6 +104,7 @@ for row in rawData:
 
 #    fillcolor='#33a02c'
     fillop='0.9'
+    strokecol='#000000'
     if iter >= 2 and iter != t:
         source = fiona.open('/usr3/graduate/bullocke/bin/Database/HelperFiles/wrs2_descending.shp')
         for rec in source:
@@ -111,7 +112,7 @@ for row in rawData:
                 break
         PR = rec['geometry']
         PR2 = str(PR).replace('(','[').replace(')',']').replace('\'','\"')
-        output += template % (fillcolor, fillcolor, fillop, row[3], row[2], row[4], row[5], PR2)
+        output += template % (fillcolor, strokecol, fillop, row[3], row[2], row[4], row[5], PR2)
     if iter == t:
         source = fiona.open('/usr3/graduate/bullocke/bin/Database/HelperFiles/wrs2_descending.shp')
         for rec in source:
@@ -119,7 +120,7 @@ for row in rawData:
                 break
         PR = rec['geometry']
         PR2 = str(PR).replace('(','[').replace(')',']').replace('\'','\"')
-        output += template2 % (fillcolor, fillcolor, fillop, row[3], row[2], row[4], row[5], PR2)
+        output += template2 % (fillcolor, strokecol, fillop, row[3], row[2], row[4], row[5], PR2)
 
 output +=     '''     ]
 }
